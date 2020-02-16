@@ -15,6 +15,10 @@ class Polygon{
 
 class Triangle extends Polygon{
   get isValid (){
-    if (this.array.length ===3) return true
+    
+    for (let i=0;i<this.array.length;i++){
+      if (this.array[i]+ ===3) return true
+    }
+    
   }
 }
