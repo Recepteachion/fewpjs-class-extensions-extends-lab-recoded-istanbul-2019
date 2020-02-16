@@ -19,10 +19,12 @@ class Polygon{
 
 class Triangle extends Polygon{
   get isValid (){
-    
-    
-    if (this.array.length===3 && this.array[0]+ this.array[1] >this.array[3] ) {
-      return true
+    let valid = true
+    if (this.array.length===3 && this.array[0]+this.array[1] > this.array[3] ) {
+      return valid
+    }
+    else{
+      return !valid
     }
   }
 }
