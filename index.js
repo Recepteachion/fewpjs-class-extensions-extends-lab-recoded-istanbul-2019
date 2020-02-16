@@ -20,7 +20,7 @@ class Polygon{
 class Triangle extends Polygon{
   get isValid (){
     let valid = true
-    if (this.array.length===3 && this.array[0]+this.array[1] > this.array[3] ) {
+    if (this.array.length===3 && this.array[0]+this.array[1] > this.array[2] ) {
       return valid
     }
     else{
