@@ -9,7 +9,11 @@ class Polygon{
   }
   
   get perimeter(){
-    return array.reduce( (a,b) =>a+b )
+    let sum =0;
+    for (const el of this.array){
+      sum += el
+    }
+    return sum
   }
 }
 
