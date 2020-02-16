@@ -33,7 +33,7 @@ class Triangle extends Polygon{
         sm = this.array[i]
       }
     }
-    if (mn + sm > mx){
+    if (mn + sm > mx && this.array.length===3){
       return true
     }else{
       return false
