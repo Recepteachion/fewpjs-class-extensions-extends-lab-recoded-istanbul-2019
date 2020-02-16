@@ -24,3 +24,10 @@ class Triangle extends Polygon{
     }
   }
 }
+
+class Square extends Polygon{
+  get isValid(){
+    if (this.array[0]===this.array[1])
+    
+  }
+}
