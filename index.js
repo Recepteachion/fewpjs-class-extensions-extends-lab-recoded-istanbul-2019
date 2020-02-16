@@ -27,12 +27,12 @@ class Triangle extends Polygon{
     // }
     let mx = Math.max(...this.array)
     let mn = Math.min(...this.array)
-    let sm = 0;
-    for (let i=0;i<this.array.length;i++){
-      if (this.array[i]>mn && this.array[i]<mx){
-        sm = this.array[i]
+    let md = this.array[Math.floor(this.array.length/2)];
+    
+      if (mn+md>mx){
+        return true
       }
-    }
+    
       if (mn + sm > mx && this.array.length===3){
       return true
     }else{
