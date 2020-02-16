@@ -21,7 +21,7 @@ class Triangle extends Polygon{
   get isValid (){
     
     
-    if (this.array[0]+ this.array[1] >this.array[3] ) {
+    if (this.array.length==3 && this.array[0]+ this.array[1] >this.array[3] ) {
       return true
     }else{
       return false
