@@ -29,13 +29,9 @@ class Triangle extends Polygon{
     let mn = Math.min(...this.array)
     let md = this.array[Math.floor(this.array.length/2)];
     
-      if (mn+md>mx){
+      if (mn+md>mx && this.array.length===3){
         return true
-      }
-    
-      if (mn + sm > mx && this.array.length===3){
-      return true
-    }else{
+      } else{
       return false
     }
    
