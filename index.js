@@ -25,6 +25,19 @@ class Triangle extends Polygon{
     // }else{
     //   return false
     // }
+    let mx = Math.max(this.array)
+    let mn = Math.min(this.array)
+    let sm = 0;
+    for (let i=0;i<this.array.length;i++){
+      if (this.array[i]>mn && this.array<mx){
+        sm = this.array[i]
+      }
+    }
+    if (mn + sm > mx){
+      return true
+    }else{
+      return false
+    }
    
   }
 }
